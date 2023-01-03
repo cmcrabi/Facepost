@@ -1,0 +1,55 @@
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+<!--
+<div class="modal" id="exampleModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form [formGroup]="editFormGroup" role="form" (ngSubmit)="onSubmit(editFormGroup)">
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="titleFormControl" class="form-label">Title</label>
+            <input type="text" class="form-control" formControlName="title" placeholder="title">
+          </div>
+          <div class="mb-3">
+            <label for="contentFormControl" class="form-label">Content</label>
+            <textarea class="form-control" formControlName="content" id="textAreaForContent" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" type="submit">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div> -->
+
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">Update Post</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="close()"></button>
+    </div>
+    <form [formGroup]="editFormGroup" role="form" (ngSubmit)="onSubmit(editFormGroup)">
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="titleFormControl" class="form-label">Title</label>
+          <input type="text" class="form-control" formControlName="title" placeholder="title">
+        </div>
+        <div class="mb-3">
+          <label for="contentFormControl" class="form-label">Content</label>
+          <textarea class="form-control" formControlName="content" id="textAreaForContent" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="close()">Close</button>
+        <button type="button" class="btn btn-primary" type="submit">Update</button>
+      </div>
+    </form>
+  </div>
+</div>

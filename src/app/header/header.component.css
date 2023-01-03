@@ -1,0 +1,6 @@
+.form-inline .form-control {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+.form-inline .form-control { margin-right:10px;}
