@@ -1,4 +1,4 @@
-<form [formGroup]="loginFromGroup" (ngSubmit)="onSubmit(loginFromGroup)">
+<form *ngIf="!userIsAuthenticated" [formGroup]="loginFromGroup" (ngSubmit)="onSubmit(loginFromGroup)">
   <!-- Email input -->
   <div class="form-outline mb-4">
     <input type="email" id="form2Example1" class="form-control" formControlName="email"/>
