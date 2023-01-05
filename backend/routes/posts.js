@@ -19,7 +19,7 @@ router.post('/api/posts', checkAuth, (req, res, next) => {
     });
 });
 
-router.get('/api/posts', (req, res, next) => {
+router.get('/api/posts', checkAuth, (req, res, next) => {
     Post.find().then(documents => {
         res.status(200).json({
             message: 'Posts from server',
